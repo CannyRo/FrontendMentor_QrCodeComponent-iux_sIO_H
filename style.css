@@ -5,5 +5,64 @@
     --Slate-300: hsl(212, 45%, 89%);
     --Slate-500: hsl(216, 15%, 48%);
     --Slate-900: hsl(218, 44%, 22%);
+    --Blue-600: hsl(216, 95%, 58%);
     --main-font: 'Outfit';
+}
+*{
+    box-sizing: border-box;
+}
+body{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    font-family: var(--main-font), 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 15px;
+    line-height: 140%;
+    font-weight: 400;
+    letter-spacing: 0.2px;
+    text-align: center;
+    background-color: var(--Slate-300);
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 16px 16px 40px 16px;
+    width: 320px;
+    background-color: var(--White);
+    border-radius: 20px;
+    box-shadow: 0px 25px 25px hsla(0, 0%, 0%, 0.05);
+}
+.card__img-container{
+    margin-bottom: 24px;
+    width: 288px;
+    height: 288px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.card__img{
+    width: 288px;
+    height: auto;
+}
+.card__title{
+    margin: 0 0 16px 0;
+    width: 256px;
+    font-size: 22px;
+    line-height: 120%;
+    font-weight: 700;
+    color: var(--Slate-900);
+}
+.card__text{
+    width: 256px;
+    color: var(--Slate-500);
+}
+footer{
+    position: absolute;
+    bottom: 0;
+}
+.footer__signature a{
+    color: var(--Blue-600);
 }
